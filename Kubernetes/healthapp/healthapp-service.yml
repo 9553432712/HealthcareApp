@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: healthapp-service
+  labels:
+    app: healthapp
+spec:
+  type: NodePort
+  #  type: ClusterIP
+  ports:
+    - port: 8080
+  selector:
+    app: healthapp

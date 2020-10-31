@@ -1,25 +1,25 @@
-# postgres deployment object
+# healthapp deployment object
 
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: postgres-deployment
+  name: healthapp-deployment
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: postgres
+        app: healthapp
     spec:
       containers:
-        - name: postgres
-          image: postgres:10.4
+        - name: healthapp
+          image: punugupatimahesh/healthapp:1
           imagePullPolicy: "IfNotPresent"
           ports:
-            - containerPort: 5432
+            - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: postgres-config
+                name: healthapp-config
 #          volumeMounts:
 #            - mountPath: /var/lib/postgresql/data
 #              name: postgredb

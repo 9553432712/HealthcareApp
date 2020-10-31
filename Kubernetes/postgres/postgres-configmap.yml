@@ -1,3 +1,5 @@
+# postgres config map object
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -1,0 +1,12 @@
+# postgres config map object
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: healthapp-config
+  labels:
+    app: healthapp
+data:
+  SPRING_DATASOURCE_USERNAME: postgres
+  SPRING_DATASOURCE_PASSWORD: postgres
+  SPRING_DATASOURCE_URL: 192.168.1.102
