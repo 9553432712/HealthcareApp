@@ -3,9 +3,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: healthapp-config
-  labels:
-    app: healthapp
+  name: healthapp-config
+  labels:
+    app: healthapp
 data:
   SPRING_DATASOURCE_USERNAME: postgres
   SPRING_DATASOURCE_PASSWORD: postgres
