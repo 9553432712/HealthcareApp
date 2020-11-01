@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kubectl apply -f healthadd-configmap.yml
-kubectl apply -f healthadd-deployment.yml
-kubectl apply -f healthadd-service.yml
+kubectl apply -f healthapp-configmap.yml
+kubectl apply -f healthapp-deployment.yml
+kubectl apply -f healthapp-service.yml
 
